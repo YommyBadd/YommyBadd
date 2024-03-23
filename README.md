@@ -2,6 +2,10 @@
 
 ![CFP_6942a](https://github.com/YommyBadd/YommyBadd/assets/154757933/2b1d0855-e029-4410-9569-68242966751e)
 
+## About Me
+
+Hello! I am Abayomi Badejo, a passionate Data Scientist interested in Data Science/Analyst role. This repository showcases some of my projects and contributions. Feel free to explore!
+
 <!--
 **YommyBadd/YommyBadd** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
