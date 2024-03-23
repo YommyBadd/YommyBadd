@@ -13,17 +13,27 @@ The Finance Calculator project was developed to help anyone with free cash at ha
 See below for the code block used for the Finance Calculator.
 
 '''py
+
 if user_choice == 'investment':
+
     # Investment calculation
+    
     principal = float(input("Enter the amount of money you are depositing: "))
+    
     interest_rate = float(input("Enter the interest rate (as a percentage): ")) / 100
+    
     years = int(input("Enter the number of years you plan on investing: "))
+    
     interest_type = input("Do you want 'simple' or 'compound' interest? ").lower()
 
     if interest_type == 'simple':
+    
         amount = principal * (1 + interest_rate * years)
+        
     elif interest_type == 'compound':
+    
         amount = principal * math.pow((1 + interest_rate), years)
+        
     else:
         print("Invalid interest type. Please choose 'simple' or 'compound'.")
 
@@ -41,8 +51,57 @@ elif user_choice == 'bond':
     print(f"The monthly repayment on the bond will be: {repayment:.2f}")
 '''
 
-### Project 2
-Description of Project 2...
+### Project 2 (Holiday Decider)
+Holiday Decider is a program developed to help users make an informed decision about where they can afford to travel to based on their budget. This program puts in consideration flight cost, hotel cost for chosen number of days and car rental cost for chosen number of days for desired number of cities to travel to. Using this program would help users see the total cost of holiday in each of the desired cities and eventually aid in decision-making based on available fund.
+See below for the code block used for the Holiday Decider.
+
+''' py
+
+
+def hotel_cost(num_nights):
+    # You can set the hotel cost per night
+    per_night_rate = 250  # Changeable rate
+    return num_nights * per_night_rate
+
+def plane_cost(city_flight):
+    # Define different flight costs for each city
+    if city_flight == "Mexico":
+        return 1300  
+    elif city_flight == "Bangkok":
+        return 1500  
+    elif city_flight == "Rome":
+        return 800    
+    else:
+        return 0  
+
+def car_rental(rental_days):
+    # Define the daily rental cost for the car
+    daily_rental_rate = 120  
+    return rental_days * daily_rental_rate
+
+def holiday_cost(hotel_cost, plane_cost, car_rental):
+    return hotel_cost + plane_cost + car_rental
+
+##### Get user inputs
+city_flight = input("Enter the city you will be flying to (Mexico, Bangkok, Rome): ")
+num_nights = int(input("Enter the number of nights you will be staying at a hotel: "))
+rental_days = int(input("Enter the number of days for which you will be hiring a car: "))
+
+##### Calculate costs
+hotel_total = hotel_cost(num_nights)
+plane_total = plane_cost(city_flight)
+car_total = car_rental(rental_days)
+total_cost = holiday_cost(hotel_total, plane_total, car_total)
+
+##### Print out details
+print("\nHoliday Details:")
+print(f"City Flight: {city_flight}")
+print(f"Hotel Cost: ${hotel_total}")
+print(f"Plane Cost: ${plane_total}")
+print(f"Car Rental Cost: ${car_total}")
+print(f"Total Holiday Cost: ${total_cost}")
+'''
+
 <!--
 **YommyBadd/YommyBadd** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
