@@ -138,12 +138,13 @@ print(f"Total Holiday Cost: ${total_cost}")
 '''
 
 ## Skills
-- Skill 1
-- Skill 2
-- Skill 3
+- Leadership/Management skill: My leadership and management skills were developed and honed while working at ExxonMobil as I walked my way through the ranks.
+- Analytical skill: My analytical skill is one great asset of mine that made me a one stop shop for problem solving.
+- Teamwork: I am a great team worker who enjoys working with others to achieve corporate goals.
+- Flexibility/Adaptability: I am flexible in nature as I quickly adapt to any situation I find myself
 
 ## Contact
-- LinkedIn: [My LinkedIn Profile]([https://www.linkedin.com/in/yourprofile](https://www.linkedin.com/in/abayomi-badejo-3787332a3/))
+- LinkedIn: [My LinkedIn Profile](https://www.linkedin.com/in/abayomi-badejo-3787332a3/)
 - Email: [My email address](yommybadd@yahoo.com)
 <!--
 **YommyBadd/YommyBadd** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
